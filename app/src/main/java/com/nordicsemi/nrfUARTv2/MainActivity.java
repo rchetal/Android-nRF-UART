@@ -23,9 +23,6 @@
 
 package com.nordicsemi.nrfUARTv2;
 
-
-
-
 import java.io.UnsupportedEncodingException;
 import java.text.DateFormat;
 import java.util.Date;
@@ -135,11 +132,13 @@ public class MainActivity extends Activity implements RadioGroup.OnCheckedChange
             }
         });
         // Handle Send button
+        //THIS CODE SHOULD BE ACTIVATED WHEN THE ALARM GOES OFF (NOT BUTTON ACTIVATED ANYMORE)
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            	EditText editText = (EditText) findViewById(R.id.sendText);
-            	String message = editText.getText().toString();
+            	//EditText editText = (EditText) findViewById(R.id.sendText);
+            	//String message = editText.getText().toString();
+                String message = "on";
             	byte[] value;
 				try {
 					//send data to service
